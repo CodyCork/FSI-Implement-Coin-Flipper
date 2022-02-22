@@ -1,27 +1,40 @@
 // TODO: Declare any global variables we need
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    // This is just a sanity check to make sure your JavaScript script is getting loaded
-    // You can remove it once you see it in your browser console in the developer tools
-    console.log('Hi')
-
-    // TODO: Add event listener and handler for flip and clear buttons
-
-    // Flip Button Click Handler
-        // TODO: Determine flip outcome
-        // TODO: Update image and status message in the DOM
-
-        // Update the scorboard
-        // TODO: Calculate the total number of rolls/flips
-        // Make variables to track the percentages of heads and tails
-        // TODO: Use the calculated total to calculate the percentages
-        // HINT: Make sure not to divide by 0! (if total is 0, percent will be 0 as well)
-        // TODO: Update the display of each table cell
+/*
 
 
-    // Clear Button Click Handler
-        // TODO: Reset global variables to 0
-        // TODO: Update the scoreboard (same logic as in flip button click handler)
+-Add variable for heads
 
+-Add a variable for tails
+
+-Add a varibale for total number of flips
+
+-Add a button to flip coin
+
+-Display Result of flip
+
+-Count the number of heads
+
+-Percentage of times on heads
+
+-Count the number of Tails
+
+-Percentage of times on Tails
+
+-Clear all Results button
+*/
+
+let heads = 0;
+let tails = 0;
+let totalFlips = 0;
+
+let coin = 'heads'
+
+const flipButton = document.querySelector("#flip-button");
+flipButton.addEventListener("click" , function(){
+    console.log("Flip Button Clicked")
+    if (coin === 'heads') {
+        heads = heads + 1
+    }
 })
+
